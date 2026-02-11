@@ -1,0 +1,70 @@
+{% extends "inherit.html" %}
+
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+{% block body %}<div class="position-relative overflow-hidden text-center">
+  <div class="container-fluid p-lg-0 mx-auto my-0 mb-0 p-0" >
+    <h1 class="display-5 fw-bold">Coding Made Easy: </h1>
+    <h1 class="display-5 fw-bold" style="color:#ebb434">Learn, Explore, and Grow </h1>
+    <h4 class="display-10  mt-5 mb-5" >Your gateway to the most useful and relevant, Free CS resources on the web</h4>
+    
+    <div class="d-flex gap-3 justify-content-center lead fw-normal">
+      <a href="/topics" class="btn btn-dark btn-lg" style = "background-color: #48444c">View All Topics</a>
+  </div>
+  
+    <img src="{% static 'images\image.svg' %}" alt="Your SVG Image" class="img-fluid w-100 mt-5" width="400" height="400">
+  </div>
+</div>   
+
+<div class="text-bg-dark me-md pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden bg-body-tertiary">
+  <div class="my-3 py-3">
+    <h2 class="display-5">We Scour the Internet so that You Don't Have To</h2>
+    <p class="lead">A Place to Start Learning.</p>
+    <div class="d-flex justify-content-between"> <!-- Create a flex container -->
+      <div class="text-center"> <!-- Image on the left -->
+        <img src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/66/EBEBEB/external-web-crawler-digital-marketing-smashingstocks-detailed-outline-smashing-stocks.png" class="img-fluid" alt="Left Image"/>
+      </div>
+      <div class="text-center"> <!-- Image in the center -->
+        <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/EBEBEB/external-add-selection-graph-design-kiranshastry-lineal-kiranshastry.png" class="img-fluid" alt="Center Image"/>
+      </div>
+      <div class="text-center"> <!-- Image on the right -->
+        <img src="https://img.icons8.com/dotty/80/EBEBEB/google-code.png" class="img-fluid" alt="Right Image"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+  <div class="my-3 py-3">
+    <h2 class="display-5">Trending</h2>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4"> <!-- One-third of the width for each component -->
+      <img src="https://img.icons8.com/color/48/python--v1.png" class="img-fluid" alt="Responsive image">
+      <h2 class="fw-normal">Python</h2>
+      <p>A popular programming language that is easy to learn and write. It can be used for various purposes, such as web development, data analysis, machine learning, and more.</p>
+      <p><a class="btn btn-secondary" href="/topic/Python">View details »</a></p>
+    </div>
+
+    <div class="col-lg-4"> <!-- One-third of the width for each component -->
+      <img src="https://img.icons8.com/fluency/48/java-coffee-cup-logo.png" class="img-fluid" alt="Responsive image">
+      <h2 class="fw-normal">Java</h2>
+      <p>Java is a widely-used, object-oriented programming language developed by Sun Microsystems (now owned by Oracle). It’s designed to be platform-independent, meaning that you can write your code once and run it on any device that has a Java Virtual Machine (JVM).</p>
+      <p><a class="btn btn-secondary" href="/topic/Java">View details »</a></p>
+    </div>
+
+    <div class="col-lg-4"> <!-- One-third of the width for each component -->
+      <img src="https://img.icons8.com/color/48/c-plus-plus-logo.png" class="img-fluid" alt="Responsive image">
+      <h2 class="fw-normal">C++</h2>
+      <p>C++ is a versatile, high-performance programming language that extends the capabilities of C with object-oriented programming features. It's known for its efficiency and flexibility and can be compiled to run on different platforms.</p>
+      <p><a class="btn btn-secondary" href="/topic/Cpp">View details »</a></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock body %}
