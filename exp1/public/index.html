@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Monitor Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <h1>Event Monitor Dashboard</h1>
+
+    <!-- Dynamic Welcome Message -->
+    <h2 id="welcomeMessage"></h2>
+
+    <div class="row">
+      <input id="username" placeholder="">
+      <input id="extra" placeholder="">
+    </div>
+
+    <div class="row">
+      <button onclick="emitEvent('login')">Login</button>
+      <button onclick="emitEvent('logout')">Logout</button>
+      <button onclick="emitEvent('purchase')">Purchase</button>
+      <button onclick="emitEvent('profile-update')">Update Profile</button>
+    </div>
+
+    <div class="stats">
+
+      <div class="stat-box">
+        <h3>Logins</h3>
+        <p id="loginCount">0</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>Logouts</h3>
+        <p id="logoutCount">0</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>Purchases</h3>
+        <p id="purchaseCount">0</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>Updates</h3>
+        <p id="updateCount">0</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

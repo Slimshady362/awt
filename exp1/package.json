@@ -1,0 +1,12 @@
+{
+  "name": "event-maestro-web",
+  "version": "1.0.0",
+  "description": "Dynamic webpage using Node.js EventEmitter",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
