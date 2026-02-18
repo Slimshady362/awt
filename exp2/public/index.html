@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo App with Undo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>Todo List</h1>
+
+    <div class="input-row">
+      <input id="todoInput" placeholder="Enter a task...">
+      <button onclick="addTodo()">Add</button>
+    </div>
+
+    <ul id="todoList"></ul>
+
+    <button id="undoBtn" onclick="undoDelete()" class="undo hidden">
+      Undo Last Delete
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
